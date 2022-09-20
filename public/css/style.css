@@ -1,0 +1,119 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+#cardimg {
+    font-family: 'Montserrat';
+    font-style: Italic;
+    background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+#cardimg .heading {
+    background-color: #f79cba;
+}
+
+#cardimg .card-header {
+    background-color: #61f2ce;
+}
+
+.blockquote-custom {
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.blockquote-custom-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -25px;
+    left: 50px;
+}
+
+#end {
+    background-color: #cddffa;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 0;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    z-index: 1;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+        display: none;
+    }
+}
+
+header h1 {
+    font-size: 70px;
+}
+
+.navbar {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    top: 0;
+    width: 100%;
+}
+
+nav .navbar-nav li a {
+    color: rgb(255, 255, 255) !important;
+    opacity: 1.0;
+    font-size: 20px;
+}
+
+#why {
+    background-color: #d8dfeb;
+}
